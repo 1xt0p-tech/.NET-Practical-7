@@ -1,0 +1,51 @@
+﻿@model Practical7.Models.StudentReview
+
+@{
+    ViewBag.Title = "Submit Feedback";
+}
+
+<h2>Submit Your Feedback</h2>
+
+@using (Html.BeginForm("Add", "Review", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, "Please fix the errors below.")
+
+    <p>
+        @Html.LabelFor(m => m.EnrollmentNo)<br />
+        @Html.TextBoxFor(m => m.EnrollmentNo, new { placeholder = "e.g. 230123456789" })
+        @Html.ValidationMessageFor(m => m.EnrollmentNo)
+    </p>
+
+    <p>
+        @Html.LabelFor(m => m.StudentName)<br />
+        @Html.TextBoxFor(m => m.StudentName)
+        @Html.ValidationMessageFor(m => m.StudentName)
+    </p>
+
+    <p>
+        @Html.LabelFor(m => m.CourseName)<br />
+        @Html.DropDownListFor(m => m.CourseName, (SelectList)ViewBag.Courses, "-- Select course --")
+        @Html.ValidationMessageFor(m => m.CourseName)
+    </p>
+
+    <p>
+        @Html.LabelFor(m => m.Rating)<br />
+        @for (int star = 1; star <= 5; star++)
+        {
+            @Html.RadioButtonFor(m => m.Rating, star) @star
+            <text>&nbsp;&nbsp;</text>
+        }
+        @Html.ValidationMessageFor(m => m.Rating)
+    </p>
+
+    <p>
+        @Html.LabelFor(m => m.Remarks)<br />
+        @Html.TextAreaFor(m => m.Remarks, 4, 50, null)
+        @Html.ValidationMessageFor(m => m.Remarks)
+    </p>
+
+    <input type="submit" value="Send Feedback" />
+}
+
+

@@ -1,0 +1,135 @@
+## Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][In][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+## Visual Studio 2015/2017/2019/2022 cache/options directory
+.vs/
+
+## User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## User-specific files (MonoDevelop / Xamarin Studio)
+*.userprefs
+
+## Mono auto generated files
+mono_crash.*
+
+## Windows Azure Build Output
+csx/
+*.build.csdef
+
+## Windows Store app package directories
+AppPackages/
+BundleArtifacts/
+Package.StoreAssociation.xml
+_pkginfo.txt
+*.appx
+*.appxbundle
+*.appxupload
+
+## Visual Studio cache files
+# files ending in .cache are generated based on references
+*.cache
+# but keep track of directories ending in .cache
+!?*.[Cc]ache/
+
+## Others
+ClientBin/
+~$*
+*~
+*.dbmdl
+*.dbproj.schemaview
+*.jfm
+*.pfx
+*.publishsettings
+node_modules/
+orleans.codegen.cs
+
+## Since TurnkeyCraft stock packages are typically small and rarely change, we can ignore them
+[Pp]ackages/
+!**/packages/build/
+
+## Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+## Visual Studio trace files
+*.e2e
+
+## TFS 2012 Local Workspace
+$tf/
+
+## Guidance Automation Toolkit
+*.gpState
+
+## ReSharper is a .NET coding add-in
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+## TeamCity is a build add-in
+_TeamCity*
+
+## DotCover is a Code Coverage Tool
+*.dotCover
+
+## AxoCover is a Code Coverage Tool
+.axoCover/*
+!.axoCover/settings.json
+
+## Coverlet is a free, cross platform Code Coverage Tool
+coverage*.json
+coverage*.xml
+coverage*.info
+
+## Visual Studio code coverage results
+*.coverage
+*.coveragexml
+
+## NCrunch
+_NCrunch_*
+.*_ncrunch*
+
+## MightyMoose
+*.mm.*
+AutoTest.Net/
+
+## Web workbench (sass)
+.sass-cache/
+
+## IDE / Editor configs
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+## SQL Server files
+*.mdf
+*.ldf
+*.ndf
+
+## Temp files
+*.temp
+*.tmp
+
+## Test results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*

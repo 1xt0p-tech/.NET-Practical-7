@@ -1,0 +1,10 @@
+﻿@model Practical7.Models.StudentReview
+
+<tr>
+    <td>@Model.EnrollmentNo</td>
+    <td>@Model.StudentName</td>
+    <td>@Model.CourseName</td>
+    <td>@Model.Rating / 5</td>
+    <td>@Model.Remarks</td>
+    <td>@Model.SubmittedOn.ToString("dd MMM yyyy, hh:mm tt")</td>
+</tr>

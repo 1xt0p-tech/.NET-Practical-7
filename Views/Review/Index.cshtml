@@ -1,0 +1,39 @@
+﻿@model List<Practical7.Models.StudentReview>
+
+@{
+    ViewBag.Title = "All Feedback";
+}
+
+<h2>Submitted Feedback</h2>
+
+@if (TempData["Message"] != null)
+{
+    <div class="ok">@TempData["Message"]</div>
+}
+
+<p>Total responses: <strong>@ViewBag.Total</strong> | Average rating: <strong>@ViewBag.Average</strong></p>
+
+@if (Model.Count == 0)
+{
+    <p>No feedback has been submitted yet.</p>
+}
+else
+{
+    <table>
+        <tr>
+            <th>Enrollment No</th>
+            <th>Name</th>
+            <th>Course</th>
+            <th>Rating</th>
+            <th>Remarks</th>
+            <th>Submitted On</th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            @Html.Partial("_ReviewRow", item)
+        }
+    </table>
+}
+
+<p>@Html.ActionLink("Add new feedback", "Add", "Review")</p>
